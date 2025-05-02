@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 
 export default function TimeOfDay() {
-  let [currentTimeOfDay, setCurrentTimeOfDay] = useState("");
+  const [currentTimeOfDay, setCurrentTimeOfDay] = useState("");
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   function update() {
@@ -22,7 +22,7 @@ export default function TimeOfDay() {
   }
 
   useEffect(() => {
-    function runAtFullHour(callback: Function) {
+    function runAtFullHour(callback: () => void) {
       function execute() {
         const now = new Date();
         const delay =

@@ -142,7 +142,7 @@ export default function WeatherWidget() {
     }
   }, []);
 
-  let { data, error, mutate, isValidating } = useSWR(
+  const { data, error, mutate, isValidating } = useSWR(
     () =>
       location
         ? `/api/get-weather?q=${location?.latitude},${location?.longitude}`
