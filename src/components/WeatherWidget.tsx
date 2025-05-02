@@ -69,7 +69,7 @@ const WIND_DIR_TO_CLASS: { [dir: string]: string } = {
 
 const CONDITION_TO_ICON: { [cond: number]: [string, string] } = {
   1000: ["wi-day-sunny", "wi-night-clear"],
-  1003: ["wi-day-sunny-overcast", "wi-night-alt-partly-cloudy"],
+  1003: ["wi-day-cloudy", "wi-night-alt-cloudy"],
   1006: ["wi-day-cloudy", "wi-night-alt-cloudy"],
   1009: ["wi-cloud", "wi-cloud"],
   1030: ["wi-day-fog", "wi-night-fog"],
@@ -180,7 +180,6 @@ export default function WeatherWidget() {
   return (
     <>
       <div className="text-ctp-text flex gap-3 items-center">
-        {/* TODO: */}
         <i
           className={`wi ${data.current.is_day === 1 ? CONDITION_TO_ICON[data.current.condition.code][0] : CONDITION_TO_ICON[data.current.condition.code][1]} text-3xl p-2`}
         ></i>
