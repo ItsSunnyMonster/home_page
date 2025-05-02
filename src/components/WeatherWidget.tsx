@@ -184,7 +184,7 @@ export default function WeatherWidget() {
           className={`wi ${data.current.is_day === 1 ? CONDITION_TO_ICON[data.current.condition.code][0] : CONDITION_TO_ICON[data.current.condition.code][1]} text-3xl p-2`}
         ></i>
         <div className="flex items-center flex-col gap-3">
-          <div className="text-ctp-yellow font-bold">{data.location.name}</div>
+          <div className="text-ctp-pink font-bold">{data.location.name}</div>
           <div className="flex gap-3 items-center">
             <div>
               <div>Conditions: {data.current.condition.text}</div>

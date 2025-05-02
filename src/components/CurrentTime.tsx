@@ -28,5 +28,5 @@ export default function CurrentTime() {
     };
   });
 
-  return <span className="text-ctp-yellow font-bold">Local: {time}</span>;
+  return <span className="text-ctp-pink font-bold">Local: {time}</span>;
 }
