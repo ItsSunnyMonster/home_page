@@ -15,7 +15,7 @@ export default function CurrentTime() {
       updateTime();
       timeout.current = setTimeout(
         execute,
-        1000 - new Date().getMilliseconds(),
+        1000 - new Date().getMilliseconds()
       );
     }
 
@@ -28,5 +28,9 @@ export default function CurrentTime() {
     };
   });
 
-  return <span className="text-ctp-pink font-bold">Local: {time}</span>;
+  return (
+    <span className="text-transparent bg-clip-text bg-gradient-to-br from-ctp-pink to-ctp-mauve font-bold">
+      Local: {time}
+    </span>
+  );
 }

@@ -135,7 +135,7 @@ export default function WeatherWidget() {
           const { latitude, longitude } = coords;
           setLocation({ latitude, longitude });
         },
-        () => setNoLocation(true),
+        () => setNoLocation(true)
       );
     } else {
       setNoLocation(true);
@@ -150,7 +150,7 @@ export default function WeatherWidget() {
     fetcher,
     {
       refreshInterval: 900_000,
-    },
+    }
   );
 
   if (noLocation) {
@@ -181,10 +181,16 @@ export default function WeatherWidget() {
     <>
       <div className="text-ctp-text flex gap-3 items-center">
         <i
-          className={`wi ${data.current.is_day === 1 ? CONDITION_TO_ICON[data.current.condition.code][0] : CONDITION_TO_ICON[data.current.condition.code][1]} text-3xl p-2`}
+          className={`wi ${
+            data.current.is_day === 1
+              ? CONDITION_TO_ICON[data.current.condition.code][0]
+              : CONDITION_TO_ICON[data.current.condition.code][1]
+          } text-3xl p-2`}
         ></i>
         <div className="flex items-center flex-col gap-3">
-          <div className="text-ctp-pink font-bold">{data.location.name}</div>
+          <div className="text-transparent bg-clip-text bg-gradient-to-br from-ctp-pink to-ctp-mauve font-bold">
+            {data.location.name}
+          </div>
           <div className="flex gap-3 items-center">
             <div>
               <div>Conditions: {data.current.condition.text}</div>
@@ -198,7 +204,9 @@ export default function WeatherWidget() {
                 {data.current.wind_degree.toString().padStart(3, "0")}°{" "}
                 {/* TODO: */}
                 <i
-                  className={`wi wi-wind ${WIND_DIR_TO_CLASS[data.current.wind_dir]} text-xl`}
+                  className={`wi wi-wind ${
+                    WIND_DIR_TO_CLASS[data.current.wind_dir]
+                  } text-xl`}
                 ></i>
               </div>
               <div>Gusts: {data.current.gust_kph}km/h</div>
