@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2025 SunnyMonster
+//
+// SPDX-License-Identifier: MIT
+
 import type { Metadata } from "next";
 import { Lexend } from "next/font/google";
 import "./globals.css";

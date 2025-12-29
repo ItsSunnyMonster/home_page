@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2025 SunnyMonster
+//
+// SPDX-License-Identifier: MIT
+
 import { NextRequest, NextResponse } from "next/server";
 
 export const dynamic = "force-dynamic";

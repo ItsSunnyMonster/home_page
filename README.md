@@ -1,4 +1,10 @@
-# Home Page
+<!--
+SPDX-FileCopyrightText: 2025 SunnyMonster
+
+SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+
+# [Home Page](https://home.farkyouinc.fyi)
 
 ## How to display other timezones
 

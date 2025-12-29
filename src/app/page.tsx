@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2025 SunnyMonster
+//
+// SPDX-License-Identifier: MIT
+
 import GlobalTimes from "@/components/GlobalTimes";
 import TimeOfDay from "@/components/TimeOfDay";
 import WeatherWidget from "@/components/WeatherWidget";

@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2025 SunnyMonster
+//
+// SPDX-License-Identifier: MIT
+
 "use client";
 
 import { useEffect, useState } from "react";
