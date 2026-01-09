@@ -11,7 +11,7 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 Visit the URL with this format:
 
 ```
-https://home.loooo.lol/?tz=[insert timezones here]
+https://home.farkyouinc.fyi/?tz=[insert timezones here]
 ```
 
 The TZ parameter should be formatted like this: Name:Timezone,Name2:Timezone2.
